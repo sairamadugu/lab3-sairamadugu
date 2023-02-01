@@ -1,0 +1,205 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -derate
+        -input_pins
+        -nets
+        -slack_lesser_than 0.0000
+        -max_paths 10000
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : adder_1b
+Version: Q-2019.12-SP3
+Date   : Wed Feb  1 11:26:54 2023
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: b[1] (input port)
+  Endpoint: sum[3] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_1b           ForQA                 saed32rvt_ss0p95v125c
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path
+  --------------------------------------------------------------------------------------------------------------
+  input external delay                                                                      0.0000     0.0000 r
+  b[1] (in)                                                  0.0000                         0.0000     0.0000 r
+  b[1] (net)                     5       4.6740                                             0.0000     0.0000 r
+  U16/A2 (NAND2X0_RVT)                             0.0000    0.0000    0.0000               0.0000     0.0000 r
+  U16/Y (NAND2X0_RVT)                                        0.0361                         0.0296     0.0296 f
+  n6 (net)                       1       0.8456                                             0.0000     0.0296 f
+  U15/A1 (AND2X1_RVT)                              0.0000    0.0361    0.0000               0.0000     0.0296 f
+  U15/Y (AND2X1_RVT)                                         0.0360                         0.0662     0.0959 f
+  n26 (net)                      3       2.5009                                             0.0000     0.0959 f
+  U21/A1 (NAND2X0_RVT)                             0.0000    0.0360    0.0000               0.0000     0.0959 f
+  U21/Y (NAND2X0_RVT)                                        0.0399                         0.0436     0.1394 r
+  n12 (net)                      1       0.7863                                             0.0000     0.1394 r
+  U23/A4 (OA22X1_RVT)                              0.0000    0.0399    0.0000               0.0000     0.1394 r
+  U23/Y (OA22X1_RVT)                                         0.0327                         0.0670     0.2065 r
+  n22 (net)                      1       0.8467                                             0.0000     0.2065 r
+  U35/A1 (AND2X1_RVT)                              0.0000    0.0327    0.0000               0.0000     0.2065 r
+  U35/Y (AND2X1_RVT)                                         0.0198                         0.0463     0.2528 r
+  sum[3] (net)                   1       0.2433                                             0.0000     0.2528 r
+  sum[3] (out)                                     0.0000    0.0198    0.0000               0.0000     0.2528 r
+  data arrival time                                                                                    0.2528
+
+  max_delay                                                                                 0.0000     0.0000
+  output external delay                                                                     0.0000     0.0000
+  data required time                                                                                   0.0000
+  --------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   0.0000
+  data arrival time                                                                                   -0.2528
+  --------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -0.2528
+
+
+  Startpoint: b[0] (input port)
+  Endpoint: sum[2] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_1b           ForQA                 saed32rvt_ss0p95v125c
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path
+  --------------------------------------------------------------------------------------------------------------
+  input external delay                                                                      0.0000     0.0000 r
+  b[0] (in)                                                  0.0000                         0.0000     0.0000 r
+  b[0] (net)                     4      24.6675                                             0.0000     0.0000 r
+  U13/A (INVX32_RVT)                               0.0000    0.0000    0.0000               0.0000     0.0000 r
+  U13/Y (INVX32_RVT)                                         0.0043                         0.0082     0.0082 f
+  n16 (net)                      1       0.8649                                             0.0000     0.0082 f
+  U29/A1 (OR2X2_RVT)                               0.0000    0.0043    0.0000               0.0000     0.0082 f
+  U29/Y (OR2X2_RVT)                                          0.0316                         0.0583     0.0665 f
+  n25 (net)                      4       3.3442                                             0.0000     0.0665 f
+  U30/A1 (NAND2X0_RVT)                             0.0000    0.0316    0.0000               0.0000     0.0665 f
+  U30/Y (NAND2X0_RVT)                                        0.0403                         0.0414     0.1078 r
+  n17 (net)                      1       0.7863                                             0.0000     0.1078 r
+  U31/A4 (OA22X1_RVT)                              0.0000    0.0403    0.0000               0.0000     0.1078 r
+  U31/Y (OA22X1_RVT)                                         0.0356                         0.0700     0.1779 r
+  n18 (net)                      1       1.1807                                             0.0000     0.1779 r
+  U32/A3 (XOR3X2_RVT)                              0.0000    0.0356    0.0000               0.0000     0.1779 r
+  U32/Y (XOR3X2_RVT)                                         0.0431                         0.0689     0.2467 f
+  sum[2] (net)                   1       0.2433                                             0.0000     0.2467 f
+  sum[2] (out)                                     0.0000    0.0431    0.0000               0.0000     0.2467 f
+  data arrival time                                                                                    0.2467
+
+  max_delay                                                                                 0.0000     0.0000
+  output external delay                                                                     0.0000     0.0000
+  data required time                                                                                   0.0000
+  --------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   0.0000
+  data arrival time                                                                                   -0.2467
+  --------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -0.2467
+
+
+  Startpoint: b[1] (input port)
+  Endpoint: cout (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_1b           ForQA                 saed32rvt_ss0p95v125c
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path
+  --------------------------------------------------------------------------------------------------------------
+  input external delay                                                                      0.0000     0.0000 f
+  b[1] (in)                                                  0.0000                         0.0000     0.0000 f
+  b[1] (net)                     5       4.6978                                             0.0000     0.0000 f
+  U16/A2 (NAND2X0_RVT)                             0.0000    0.0000    0.0000               0.0000     0.0000 f
+  U16/Y (NAND2X0_RVT)                                        0.0387                         0.0283     0.0283 r
+  n6 (net)                       1       0.8467                                             0.0000     0.0283 r
+  U15/A1 (AND2X1_RVT)                              0.0000    0.0387    0.0000               0.0000     0.0283 r
+  U15/Y (AND2X1_RVT)                                         0.0378                         0.0640     0.0922 r
+  n26 (net)                      3       2.5201                                             0.0000     0.0922 r
+  U36/A2 (NAND4X0_RVT)                             0.0000    0.0378    0.0000               0.0000     0.0922 r
+  U36/Y (NAND4X0_RVT)                                        0.0649                         0.0605     0.1528 f
+  n28 (net)                      1       0.6935                                             0.0000     0.1528 f
+  U28/A3 (AND3X1_RVT)                              0.0000    0.0649    0.0000               0.0000     0.1528 f
+  U28/Y (AND3X1_RVT)                                         0.0262                         0.0835     0.2362 f
+  cout (net)                     1       0.2433                                             0.0000     0.2362 f
+  cout (out)                                       0.0000    0.0262    0.0000               0.0000     0.2362 f
+  data arrival time                                                                                    0.2362
+
+  max_delay                                                                                 0.0000     0.0000
+  output external delay                                                                     0.0000     0.0000
+  data required time                                                                                   0.0000
+  --------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   0.0000
+  data arrival time                                                                                   -0.2362
+  --------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -0.2362
+
+
+  Startpoint: a[1] (input port)
+  Endpoint: sum[1] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_1b           ForQA                 saed32rvt_ss0p95v125c
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path
+  --------------------------------------------------------------------------------------------------------------
+  input external delay                                                                      0.0000     0.0000 f
+  a[1] (in)                                                  0.0000                         0.0000     0.0000 f
+  a[1] (net)                     5       4.9665                                             0.0000     0.0000 f
+  U38/A2 (XOR3X2_RVT)                              0.0000    0.0000    0.0000               0.0000     0.0000 f
+  U38/Y (XOR3X2_RVT)                                         0.0431                         0.1420     0.1420 f
+  sum[1] (net)                   1       0.2433                                             0.0000     0.1420 f
+  sum[1] (out)                                     0.0000    0.0431    0.0000               0.0000     0.1420 f
+  data arrival time                                                                                    0.1420
+
+  max_delay                                                                                 0.0000     0.0000
+  output external delay                                                                     0.0000     0.0000
+  data required time                                                                                   0.0000
+  --------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   0.0000
+  data arrival time                                                                                   -0.1420
+  --------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -0.1420
+
+
+  Startpoint: b[0] (input port)
+  Endpoint: sum[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_1b           ForQA                 saed32rvt_ss0p95v125c
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path
+  --------------------------------------------------------------------------------------------------------------
+  input external delay                                                                      0.0000     0.0000 f
+  b[0] (in)                                                  0.0000                         0.0000     0.0000 f
+  b[0] (net)                     4      24.4783                                             0.0000     0.0000 f
+  U37/A2 (XOR3X2_RVT)                              0.0000    0.0000    0.0000               0.0000     0.0000 f
+  U37/Y (XOR3X2_RVT)                                         0.0431                         0.1420     0.1420 f
+  sum[0] (net)                   1       0.2433                                             0.0000     0.1420 f
+  sum[0] (out)                                     0.0000    0.0431    0.0000               0.0000     0.1420 f
+  data arrival time                                                                                    0.1420
+
+  max_delay                                                                                 0.0000     0.0000
+  output external delay                                                                     0.0000     0.0000
+  data required time                                                                                   0.0000
+  --------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   0.0000
+  data arrival time                                                                                   -0.1420
+  --------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -0.1420
+
+
+1

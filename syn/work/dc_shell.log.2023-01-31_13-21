@@ -1,0 +1,1069 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ramadugu/.synopsys_dv_prefs.tcl
+dc_shell> source ../scripts/dc-adder_1a.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Warning: Defining design library 'WORK' at directory '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work/WORK_autoread'. (AUTOREAD-107)
+Information: Adding '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'.  (AUTOREAD-100)
+Information: Scanning file { adder_1a.sv }. (AUTOREAD-303)
+Warning: /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:2: error at or near 'logic' prevents file scanning. (AUTOREAD-304)
+Warning: /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:18: error at or near ';' prevents file scanning. (AUTOREAD-304)
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:18: Syntax error at or near token ';'. (VER-294)
+*** Presto compilation terminated with 1 errors. ***
+Warning: Analyze command for file adder_1a.sv did not succeed. (AUTOREAD-402)
+*** Autoread command terminated with errors. ***
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (adder_1a)
+Elaborated 1 design.
+Current design is now 'adder_1a'.
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+Current design is 'adder_1a'.
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.3 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.3 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 11 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'adder_1a'
+
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'full_adder' in 'adder_1a'. (LINK-5)
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1a'
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'full_adder' in 'adder_1a'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 0.00%
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:30       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+    0:00:31       0.0      0.00       0.0       0.0                              0.0000
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'full_adder' in 'adder_1a'. (LINK-5)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated black box outputs. (PWR-428)
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'full_adder' in 'adder_1a'. (LINK-5)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1a.dc.vg'.
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Writing ddc file '../outputs/adder_1a.dc.ddc'.
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+dc_shell> report_qor
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : qor
+Design : adder_1a
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 13:22:17 2023
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.00
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                  4
+  Buf/Inv Cell Count:               0
+  Buf Cell Count:                   0
+  Inv Cell Count:                   0
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:         4
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:        0.000000
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:              0.000000
+  Total Buffer Area:             0.00
+  Total Inverter Area:           0.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  1.849090
+  -----------------------------------
+  Cell Area:                 0.000000
+  Design Area:               1.849090
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            11
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: mo.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.07
+  Mapping Optimization:                0.32
+  -----------------------------------------
+  Overall Compile Time:                4.24
+  Overall Compile Wall Clock Time:     4.72
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+dc_shell> gui_start
+Current design is 'adder_1a'.
+4.1
+Current design is 'adder_1a'.
+dc_shell> 
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/generic.sdb'
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'adder_1a' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+dc_shell> link
+  Linking design 'adder_1a'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  adder_1a                    /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work/adder_1a.db
+  saed32rvt_ss0p95v125c (library)
+                              /pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db
+  dw_foundation.sldb (library)
+                              /pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb
+
+Information: Building the design 'full_adder'. (HDL-193)
+Warning: Cannot find the design 'full_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'full_adder' in 'adder_1a'. (LINK-5)
+0
+dc_shell> less
+Error: unknown command 'less' (CMD-005)
+dc_shell> less adder_1a.db
+Error: unknown command 'less' (CMD-005)
+dc_shell> gui_start
+Current design is 'adder_1a'.
+Current design is 'adder_1a'.
+dc_shell> remove_design -designs
+Removing design 'adder_1a'
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:3: Syntax error at or near token ')'. (VER-294)
+Error:  Cannot recover from previous errors. (VER-518)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: The width of port cin on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: The width of port cin on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: The width of port c_in on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin c_in on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:12: The width of port cin on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:8: The width of port cin on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:8: The width of port cin on instance x2 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:x2. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> 
+Launching firefox to view document
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:8: The width of port cin on instance x2 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:x2. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> gui-start
+Error: unknown command 'gui-start' (CMD-005)
+dc_shell> gui_start
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:16: Instantiation fa_a has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:25: Instantiation fa_b has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:34: Instantiation fa_c has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:44: Instantiation fa_d has mixed ordered and named port connections (VER-147)
+*** Presto compilation terminated with 4 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:16: Instantiation fa_a has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:25: Instantiation fa_b has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:34: Instantiation fa_c has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:44: Instantiation fa_d has mixed ordered and named port connections (VER-147)
+*** Presto compilation terminated with 4 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:16: Instantiation fa_a has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:25: Instantiation fa_b has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:34: Instantiation fa_c has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:44: Instantiation fa_d has mixed ordered and named port connections (VER-147)
+*** Presto compilation terminated with 4 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:16: Instantiation fa_a has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:25: Instantiation fa_b has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:34: Instantiation fa_c has mixed ordered and named port connections (VER-147)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:44: Instantiation fa_d has mixed ordered and named port connections (VER-147)
+*** Presto compilation terminated with 4 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: The width of port cin on instance fa1 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin cin on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:15: The width of port p3 on instance fa1 of design full_adder_param_1 is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin p3 on cell full_adder:fa1. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:12: The width of port p5 on instance fa3 of design full_adder is inconsistent with other instantiations of the same design. (ELAB-369)
+Error:  Cannot resolve pin p5[3] on cell full_adder:fa3. (ELAB-327)
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:7: Syntax error at or near token 'input'. (VER-294)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: Syntax error at or near token 'full_adder'. (VER-294)
+Warning:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:11: No module instance name. (VER-737)
+Warning:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:12: No module instance name. (VER-737)
+Warning:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:13: No module instance name. (VER-737)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:7: Syntax error at or near token 'input'. (VER-294)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: Syntax error at or near token 'full_adder'. (VER-294)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:3: Syntax error at or near token 'input'. (VER-294)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:6: Syntax error at or near token 'full_adder'. (VER-294)
+Error:  Cannot recover from previous errors. (VER-518)
+*** Presto compilation terminated with 3 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:3: Syntax error at or near token 'input'. (VER-294)
+Error:  Cannot recover from previous errors. (VER-518)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:3: Syntax error at or near token 'input'. (VER-294)
+Error:  Cannot recover from previous errors. (VER-518)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:7: Base of subscript operator a must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:7: Base of subscript operator b must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:8: Base of subscript operator a must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:8: Base of subscript operator b must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:9: Base of subscript operator a must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:9: Base of subscript operator b must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: Base of subscript operator a must be a vector. (VER-194)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:10: Base of subscript operator b must be a vector. (VER-194)
+*** Presto compilation terminated with 8 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'. (UID-59)
+No designs were read
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Current design is now '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.db:adder_1a'
+Loaded 2 designs.
+Current design is 'adder_1a'.
+dc_shell> 
+Current design is 'adder_1a'.
+dc_shell> pwd
+/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work
+dc_shell> source ../scripts/dc-adder_1a.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Information: HDL source file adder_1a.sv is out-of-date. (AUTOREAD-300)
+Warning: /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:5: error at or near 'logic' prevents file scanning. (AUTOREAD-304)
+Removing previous elaborated design adder_1a
+Removing previous elaborated design adder
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully. (adder_1a)
+Elaborated 1 design.
+Current design is now 'adder_1a'.
+Information: Building the design 'adder'. (HDL-193)
+Presto compilation completed successfully. (adder)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+1
+Current design is 'adder_1a'.
+Information: Uniquified 4 instances of design 'adder'. (OPT-1056)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: "The variable 'compile_high_effort_area_in_incremental' is supported in DC NXT only. Ignoring this setting." (OPT-1726)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'adder_1a'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1a'
+  Processing 'adder_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    1:00:03      48.8      0.34       1.2       0.0                           3067553.7500
+    1:00:03      55.4      0.32       1.3       0.0                           3923492.5000
+    1:00:03      55.4      0.32       1.3       0.0                           3923492.5000
+    1:00:03      55.4      0.32       1.3       0.0                           3923492.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    1:00:03      55.4      0.32       1.3       0.0                           3923492.5000
+    1:00:03      55.4      0.32       1.3       0.0                           3923492.5000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    1:00:03      52.6      0.32       1.3       0.0                           3437782.0000
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+    1:00:03      52.1      0.32       1.3       0.0                           3235869.5000
+    1:00:03      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:00:04      51.8      0.31       1.3       0.0                           3199028.0000
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:04      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:05      51.3      0.31       1.3       0.0                           3125345.2500
+    1:00:05      51.3      0.31       1.3       0.0                           3125345.2500
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1a.dc.vg'.
+Writing ddc file '../outputs/adder_1a.dc.ddc'.
+1
+dc_shell> gui_start
+Current design is 'adder_1a'.
+Current design is 'adder_1a'.
+dc_shell> uplevel #0 { report_net }
+ 
+****************************************
+Report : net
+Design : adder_1a
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 14:22:10 2023
+****************************************
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+adder_1a               ForQA             saed32rvt_ss0p95v125c
+adder_3                ForQA             saed32rvt_ss0p95v125c
+adder_0                ForQA             saed32rvt_ss0p95v125c
+adder_1                ForQA             saed32rvt_ss0p95v125c
+adder_2                ForQA             saed32rvt_ss0p95v125c
+
+
+Net
+ Fanout    Fanin     Load      LoadUR    LoadUF    LoadLR    LoadLF    Resist    Pins      Attr
+-----------------------------------------------------------------------------------------------
+a[0]
+      2         1        3.61      3.77      3.73      3.45      3.42      0.04       3    
+a[1]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+a[2]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+a[3]
+      3         1        2.99      3.33      3.37      2.60      2.62      0.07       4    
+b[0]
+      2         1        2.67      2.93      2.92      2.41      2.43      0.04       3    
+b[1]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+b[2]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+b[3]
+      3         1        3.26      3.49      3.49      3.02      2.97      0.07       4    
+c0
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c1
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c2
+      2         1        2.11      2.50      2.49      1.76      1.76      0.04       3    
+cin
+      2         1        3.21      3.54      3.57      2.84      2.80      0.04       3    
+cout
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[0]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[1]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[2]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[3]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+-----------------------------------------------------------------------------------------------
+Total 17 nets
+     35        17       34.04     37.34     37.32     30.86     30.67      0.75      52
+Maximum
+      3         1        3.61      3.77      3.73      3.45      3.42      0.07       4
+Average
+   2.06      1.00        2.00      2.20      2.20      1.82      1.80      0.04    3.06
+dc_shell> uplevel #0 { report_net }
+ 
+****************************************
+Report : net
+Design : adder_1a
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 14:22:15 2023
+****************************************
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+adder_1a               ForQA             saed32rvt_ss0p95v125c
+adder_3                ForQA             saed32rvt_ss0p95v125c
+adder_0                ForQA             saed32rvt_ss0p95v125c
+adder_1                ForQA             saed32rvt_ss0p95v125c
+adder_2                ForQA             saed32rvt_ss0p95v125c
+
+
+Net
+ Fanout    Fanin     Load      LoadUR    LoadUF    LoadLR    LoadLF    Resist    Pins      Attr
+-----------------------------------------------------------------------------------------------
+a[0]
+      2         1        3.61      3.77      3.73      3.45      3.42      0.04       3    
+a[1]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+a[2]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+a[3]
+      3         1        2.99      3.33      3.37      2.60      2.62      0.07       4    
+b[0]
+      2         1        2.67      2.93      2.92      2.41      2.43      0.04       3    
+b[1]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+b[2]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+b[3]
+      3         1        3.26      3.49      3.49      3.02      2.97      0.07       4    
+c0
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c1
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c2
+      2         1        2.11      2.50      2.49      1.76      1.76      0.04       3    
+cin
+      2         1        3.21      3.54      3.57      2.84      2.80      0.04       3    
+cout
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[0]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[1]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[2]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[3]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+-----------------------------------------------------------------------------------------------
+Total 17 nets
+     35        17       34.04     37.34     37.32     30.86     30.67      0.75      52
+Maximum
+      3         1        3.61      3.77      3.73      3.45      3.42      0.07       4
+Average
+   2.06      1.00        2.00      2.20      2.20      1.82      1.80      0.04    3.06
+dc_shell> uplevel #0 { report_net }
+ 
+****************************************
+Report : net
+Design : adder_1a
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 14:22:17 2023
+****************************************
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+adder_1a               ForQA             saed32rvt_ss0p95v125c
+adder_3                ForQA             saed32rvt_ss0p95v125c
+adder_0                ForQA             saed32rvt_ss0p95v125c
+adder_1                ForQA             saed32rvt_ss0p95v125c
+adder_2                ForQA             saed32rvt_ss0p95v125c
+
+
+Net
+ Fanout    Fanin     Load      LoadUR    LoadUF    LoadLR    LoadLF    Resist    Pins      Attr
+-----------------------------------------------------------------------------------------------
+a[0]
+      2         1        3.61      3.77      3.73      3.45      3.42      0.04       3    
+a[1]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+a[2]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+a[3]
+      3         1        2.99      3.33      3.37      2.60      2.62      0.07       4    
+b[0]
+      2         1        2.67      2.93      2.92      2.41      2.43      0.04       3    
+b[1]
+      3         1        3.10      3.33      3.32      2.94      2.90      0.07       4    
+b[2]
+      3         1        2.91      3.30      3.31      2.51      2.51      0.07       4    
+b[3]
+      3         1        3.26      3.49      3.49      3.02      2.97      0.07       4    
+c0
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c1
+      2         1        1.48      1.65      1.64      1.32      1.31      0.04       3    
+c2
+      2         1        2.11      2.50      2.49      1.76      1.76      0.04       3    
+cin
+      2         1        3.21      3.54      3.57      2.84      2.80      0.04       3    
+cout
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[0]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[1]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[2]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+sum[3]
+      1         1        0.24      0.24      0.24      0.24      0.24      0.02       2    
+-----------------------------------------------------------------------------------------------
+Total 17 nets
+     35        17       34.04     37.34     37.32     30.86     30.67      0.75      52
+Maximum
+      3         1        3.61      3.77      3.73      3.45      3.42      0.07       4
+Average
+   2.06      1.00        2.00      2.20      2.20      1.82      1.80      0.04    3.06
+dc_shell> 

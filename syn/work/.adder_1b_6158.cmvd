@@ -1,0 +1,9 @@
+<?xml-stylesheet type="text/xsl" href=".adder_1b_6158.cmvd.xslt" ?>
+<!DOCTYPE treebrowser>
+<treebrowser version="2.0" title="MV Advisor" data="name:adder_1b;port_count:14;hier_cell_count:0;leaf_cell_count:30;">
+<table>
+  <column id="1" text="Title" />
+  <column id="2" text="Count" />
+  <column id="3" text="Description" />
+</table>
+</treebrowser>

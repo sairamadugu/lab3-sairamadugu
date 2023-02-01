@@ -1,0 +1,24 @@
+module adder_1c(input logic [3:0] a, input logic [3:0] b, input logic cin, output logic [3:0] sum, output logic cout);
+  always_comb
+ begin
+    case (cin)
+      0: begin
+        sum[0] = a[0] ^ b[0];
+        sum[1] = a[1] ^ b[1];
+        sum[2] = a[2] ^ b[2];
+        sum[3] = a[3] ^ b[3];
+        cout = a[3] & b[3];
+      end
+      cin: begin
+        sum[0] = a[0] ^ b[0] ^ cin;
+        sum[1] = a[1] ^ b[1] ^ ((a[0] & b[0]) | (a[0] & cin) | (b[0] & cin));
+        sum[2] = a[2] ^ b[2] ^ ((a[1] & b[1]) | (a[1] & cin) | (b[1] & cin) | (a[0] & b[0] & cin));
+        sum[3] = a[3] ^ b[3] ^ ((a[2] & b[2]) | (a[2] & cin) | (b[2] & cin) | (a[1] & b[1] & cin) | (a[0] & b[0] & cin));
+        cout = (a[3] & b[3]) | (a[2] & b[2] & cin) | (a[1] & b[1] & cin) | (a[0] & b[0] & cin);
+      end
+
+  default: {cout ,sum} =0;
+    endcase
+  end
+endmodule
+

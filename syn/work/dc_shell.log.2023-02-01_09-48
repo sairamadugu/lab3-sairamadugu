@@ -1,0 +1,343 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ramadugu/.synopsys_dv_prefs.tcl
+dc_shell> set top_Design adder_1c
+adder_1c
+dc_shell> source ../scripts/dc-adder_1c.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Warning: Defining design library 'WORK' at directory '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work/WORK_autoread'. (AUTOREAD-107)
+Information: Adding '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'.  (AUTOREAD-100)
+Information: Scanning file { adder_1c.sv }. (AUTOREAD-303)
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  File /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work/WORK_autoread/adder_1c-verilog.pvl not found, or does not contain a usable description of adder_1c. (ELAB-320)
+Presto compilation completed successfully.
+Error: Current design is not defined. (UID-4)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+0
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: No files or designs were specified. (UID-22)
+Error: No files or designs were specified. (UID-22)
+Error: Current design is not defined. (UID-4)
+0
+dc_shell> gui_start
+4.1
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+
+Statistics for case statements in always block at line 2 in file
+        '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            4             |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/four_bit_adder.db:four_bit_adder'
+Loaded 1 design.
+Current design is 'four_bit_adder'.
+dc_shell> 
+Current design is 'four_bit_adder'.
+dc_shell> remove_design -designs
+Removing design 'four_bit_adder'
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+
+Statistics for case statements in always block at line 2 in file
+        '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            4             |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.db:adder_1c'
+Loaded 1 design.
+Current design is 'adder_1c'.
+dc_shell> 
+Current design is 'adder_1c'.
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/generic.sdb'
+dc_shell> current_design
+Current design is 'adder_1c'.
+{adder_1c}
+dc_shell> source ../scripts/dc-adder_1c.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Information: HDL source file adder_1c.sv is out-of-date. (AUTOREAD-300)
+Removing previous elaborated design adder_1c
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 2 in file
+        '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            4             |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (adder_1c)
+Elaborated 1 design.
+Current design is now 'adder_1c'.
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+1
+Current design is 'adder_1c'.
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.3 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.3 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'adder_1c'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1c'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:45      63.0      0.22       1.0       0.0                           3154875.0000
+    0:03:45      62.8      0.22       1.0       0.0                           3178358.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:03:46      67.1      0.25       1.0       0.0                           3941818.2500
+    0:03:46      62.3      0.22       1.0       0.0                           3310026.5000
+    0:03:46      62.3      0.22       1.0       0.0                           3310026.5000
+    0:03:46      62.3      0.22       1.0       0.0                           3310026.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    0:03:46      62.3      0.22       1.0       0.0                           3310026.5000
+    0:03:46      62.3      0.22       1.0       0.0                           3310026.5000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:46      61.0      0.22       1.0       0.0                           3124633.5000
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:46      60.7      0.22       0.9       0.0                           3052602.2500
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:46      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:47      60.5      0.22       0.9       0.0                           2970636.2500
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.0      0.22       0.9       0.0                           2829732.0000
+    0:03:47      60.2      0.22       0.9       0.0                           2882853.7500
+    0:03:47      60.2      0.22       0.9       0.0                           2882853.7500
+    0:03:47      60.2      0.22       0.9       0.0                           2882853.7500
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1c.dc.vg'.
+Writing ddc file '../outputs/adder_1c.dc.ddc'.
+1
+dc_shell> set top_design adder_1d
+adder_1d
+dc_shell> gui_start
+Current design is 'adder_1c'.
+Current design is 'adder_1c'.
+dc_shell> remove_design -designs
+Removing design 'adder_1c'
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv}
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv:8: Assigment to 'cout' requires that it be a register. (VER-952)
+Error:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv:8: Assigment to 'sum' requires that it be a register. (VER-952)
+*** Presto compilation terminated with 2 errors. ***
+Error: Can't read 'sverilog' file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1d.sv'. (UID-59)
+No designs were read
+dc_shell> 

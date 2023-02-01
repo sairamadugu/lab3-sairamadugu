@@ -1,0 +1,963 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ramadugu/.synopsys_dv_prefs.tcl
+dc_shell> set top_design adder_1a
+adder_1a
+dc_shell> pwd
+/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work
+dc_shell> source ../scripts/dc-adder_1a.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Warning: Defining design library 'WORK' at directory '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/work/WORK_autoread'. (AUTOREAD-107)
+Information: Adding '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'.  (AUTOREAD-100)
+Information: Scanning file { adder_1a.sv }. (AUTOREAD-303)
+Warning: /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv:5: error at or near 'logic' prevents file scanning. (AUTOREAD-304)
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (adder_1a)
+Elaborated 1 design.
+Current design is now 'adder_1a'.
+Information: Building the design 'adder'. (HDL-193)
+Presto compilation completed successfully. (adder)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+1
+Current design is 'adder_1a'.
+Information: Uniquified 4 instances of design 'adder'. (OPT-1056)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.3 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.3 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'adder_1a'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1a'
+  Processing 'adder_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:41      48.8      0.34       1.2       0.0                           3067553.7500
+    0:00:41      55.4      0.32       1.3       0.0                           3923492.5000
+    0:00:41      55.4      0.32       1.3       0.0                           3923492.5000
+    0:00:41      55.4      0.32       1.3       0.0                           3923492.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    0:00:41      55.4      0.32       1.3       0.0                           3923492.5000
+    0:00:41      55.4      0.32       1.3       0.0                           3923492.5000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:41      52.6      0.32       1.3       0.0                           3437782.0000
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+    0:00:41      52.1      0.32       1.3       0.0                           3235869.5000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:41      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:42      51.8      0.31       1.3       0.0                           3199028.0000
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+    0:00:42      51.3      0.31       1.3       0.0                           3125345.2500
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1a.dc.vg'.
+Writing ddc file '../outputs/adder_1a.dc.ddc'.
+1
+dc_shell> report_qor
+ 
+****************************************
+Report : qor
+Design : adder_1a
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 16:13:24 2023
+****************************************
+
+
+  Timing Path Group 'default'
+  -----------------------------------
+  Levels of Logic:               4.00
+  Critical Path Length:          0.31
+  Critical Path Slack:          -0.31
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:         -1.25
+  No. of Violating Paths:        5.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          4
+  Hierarchical Port Count:         20
+  Leaf Cell Count:                 13
+  Buf/Inv Cell Count:               2
+  Buf Cell Count:                   2
+  Inv Cell Count:                   0
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:        13
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       51.337089
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:              4.066304
+  Total Buffer Area:             4.07
+  Total Inverter Area:           0.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  3.698180
+  -----------------------------------
+  Cell Area:                51.337089
+  Design Area:              55.035269
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            22
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: mo.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.18
+  Mapping Optimization:                1.16
+  -----------------------------------------
+  Overall Compile Time:                4.94
+  Overall Compile Wall Clock Time:     5.41
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.31  TNS: 1.25  Number of Violating Paths: 5
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+dc_shell> set top_Design adder_1b
+adder_1b
+dc_shell> source ../scripts/dc-adder_1b.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1b.sv'.  (AUTOREAD-100)
+Information: Removing from autoread database '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1a.sv'.  (AUTOREAD-101)
+Information: Scanning file { adder_1b.sv }. (AUTOREAD-303)
+Warning: /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1b.sv:8: error at or near 'logic' prevents file scanning. (AUTOREAD-304)
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1b.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully. (adder_1b)
+Elaborated 1 design.
+Current design is now 'adder_1b'.
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+1
+Current design is 'adder_1b'.
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: "The variable 'compile_high_effort_area_in_incremental' is supported in DC NXT only. Ignoring this setting." (OPT-1726)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'adder_1b'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1b'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:44      72.2      0.30       1.1       0.0                           3739542.7500
+    0:01:44      72.2      0.30       1.1       0.0                           3739542.7500
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:44      72.9      0.33       1.2       0.0                           3877588.5000
+    0:01:44      71.9      0.26       1.1       0.0                           3763524.2500
+    0:01:44      71.9      0.26       1.1       0.0                           3763524.2500
+    0:01:44      71.9      0.26       1.1       0.0                           3763524.2500
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    0:01:44      71.9      0.26       1.1       0.0                           3763524.2500
+    0:01:44      70.4      0.28       1.1       0.0                           3738869.2500
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:44      70.1      0.28       1.1       0.0                           3675687.5000
+    0:01:44      79.5      0.28       1.1       0.0                           6335185.0000
+    0:01:44      79.5      0.28       1.1       0.0                           6335185.0000
+    0:01:44      81.3      0.28       1.1       0.0                           6788538.5000
+    0:01:44      81.3      0.28       1.1       0.0                           6788538.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:45      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:46      81.1      0.27       1.1       0.0                           6706572.5000
+    0:01:46      89.2      0.25       1.0       0.0                           7068947.5000
+    0:01:46      89.7      0.25       1.0       0.0                           7175190.5000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:46      89.7      0.25       1.0       0.0                           7175190.5000
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+    0:01:46      89.7      0.25       1.0       0.0                           7175190.5000
+    0:01:46      89.7      0.25       1.0       0.0                           7175190.5000
+    0:01:46      89.7      0.25       1.0       0.0                           7175190.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:46      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:47      91.7      0.25       1.0       0.0                           7766209.5000
+    0:01:47      88.2      0.25       1.0       0.0                           6774959.0000
+    0:01:47      88.2      0.25       1.0       0.0                           6774959.0000
+    0:01:47      88.2      0.25       1.0       0.0                           6774959.0000
+    0:01:47      89.7      0.25       1.0       0.0                           7175190.5000
+    0:01:47      80.3      0.25       1.0       0.0                           4540977.5000
+    0:01:47      80.3      0.25       1.0       0.0                           4540977.5000
+    0:01:47      80.3      0.25       1.0       0.0                           4540977.5000
+    0:01:47      93.5      0.25       1.0       0.0                           8367378.5000
+    0:01:47      93.5      0.25       1.0       0.0                           8367378.5000
+    0:01:47      93.8      0.25       1.0       0.0                           8420500.0000
+    0:01:47      86.4      0.25       1.0       0.0                           6285746.0000
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1b.dc.vg'.
+Writing ddc file '../outputs/adder_1b.dc.ddc'.
+1
+dc_shell> report_qor
+ 
+****************************************
+Report : qor
+Design : adder_1b
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 16:14:33 2023
+****************************************
+
+
+  Timing Path Group 'default'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.25
+  Critical Path Slack:          -0.25
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:         -1.02
+  No. of Violating Paths:        5.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 30
+  Buf/Inv Cell Count:               6
+  Buf Cell Count:                   0
+  Inv Cell Count:                   6
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:        30
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       86.408961
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:             16.519360
+  Total Buffer Area:             0.00
+  Total Inverter Area:          16.52
+  Macro/Black Box Area:      0.000000
+  Net Area:                  7.010213
+  -----------------------------------
+  Cell Area:                86.408961
+  Design Area:              93.419174
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            39
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: mo.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.30
+  Mapping Optimization:                2.89
+  -----------------------------------------
+  Overall Compile Time:                6.35
+  Overall Compile Wall Clock Time:     6.80
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.25  TNS: 1.02  Number of Violating Paths: 5
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+dc_shell> set top_design adder_1c
+adder_1c
+dc_shell> source ../scripts/dc-adder_1c.tcl
+== ANALYZE autoread all files ==
+
+Starting ANALYZE autoread mode...
+Information: Adding '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'.  (AUTOREAD-100)
+Information: Removing from autoread database '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1b.sv'.  (AUTOREAD-101)
+Information: Scanning file { adder_1c.sv }. (AUTOREAD-303)
+Compiling source file /home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+Presto compilation completed successfully.
+Autoread command completed successfully.
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 2 in file
+        '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            4             |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (adder_1c)
+Elaborated 1 design.
+Current design is now 'adder_1c'.
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+1
+Current design is 'adder_1c'.
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: "The variable 'compile_high_effort_area_in_incremental' is supported in DC NXT only. Ignoring this setting." (OPT-1726)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'adder_1c'
+
+Loaded alib file './alib-52/saed32rvt_ss0p95v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'adder_1c'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_RVT' in the library 'saed32rvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:32      61.5      0.24       1.0       0.0                           3254188.5000
+    0:02:32      61.2      0.24       1.0       0.0                           3277672.2500
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:33      63.5      0.26       1.1       0.0                           3820583.5000
+    0:02:33      72.7      0.24       1.0       0.0                           5849686.0000
+    0:02:33      72.7      0.24       1.0       0.0                           5849686.0000
+    0:02:33      72.7      0.24       1.0       0.0                           5849686.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+    0:02:33      72.7      0.24       1.0       0.0                           5849686.0000
+    0:02:33      72.7      0.24       1.0       0.0                           5849686.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:02:33      71.2      0.24       1.0       0.0                           5587408.0000
+    0:02:33      72.7      0.24       1.0       0.0                           5987639.5000
+    0:02:33      72.7      0.24       1.0       0.0                           5987639.5000
+    0:02:33      76.2      0.24       1.0       0.0                           6950046.0000
+    0:02:33      76.2      0.24       1.0       0.0                           6950046.0000
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:33      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:34      64.0      0.19       0.8       0.0                           3914186.2500
+    0:02:34      64.0      0.19       0.8       0.0                           3914186.2500
+
+Threshold voltage group cell usage:
+>> saed32cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:34      64.0      0.19       0.8       0.0                           3914186.2500
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.0      0.19       0.8       0.0                           3751210.7500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      62.3      0.19       0.8       0.0                           3788052.2500
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+    0:02:34      58.5      0.19       0.8       0.0                           2743680.0000
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1c.dc.vg'.
+Writing ddc file '../outputs/adder_1c.dc.ddc'.
+1
+dc_shell> report_qor
+ 
+****************************************
+Report : qor
+Design : adder_1c
+Version: Q-2019.12-SP3
+Date   : Tue Jan 31 16:15:18 2023
+****************************************
+
+
+  Timing Path Group 'default'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.19
+  Critical Path Slack:          -0.19
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:         -0.82
+  No. of Violating Paths:        5.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 20
+  Buf/Inv Cell Count:               1
+  Buf Cell Count:                   0
+  Inv Cell Count:                   1
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:        20
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       58.453120
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:              1.270720
+  Total Buffer Area:             0.00
+  Total Inverter Area:           1.27
+  Macro/Black Box Area:      0.000000
+  Net Area:                  5.447597
+  -----------------------------------
+  Cell Area:                58.453120
+  Design Area:              63.900716
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            29
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: mo.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.01
+  Logic Optimization:                  0.18
+  Mapping Optimization:                1.37
+  -----------------------------------------
+  Overall Compile Time:                4.69
+  Overall Compile Wall Clock Time:     5.16
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.19  TNS: 0.82  Number of Violating Paths: 5
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+dc_shell> 
+
+Memory usage for this session 176 Mbytes.
+Memory usage for this session including child processes 176 Mbytes.
+CPU usage for this session 19 seconds ( 0.01 hours ).
+Elapsed time for this session 293 seconds ( 0.08 hours ).
+
+Thank you...

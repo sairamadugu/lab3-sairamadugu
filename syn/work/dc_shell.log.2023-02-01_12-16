@@ -1,0 +1,49 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ramadugu/.synopsys_dv_prefs.tcl
+dc_shell> gui_start
+4.1
+dc_shell> read_file -format sverilog {/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv}
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog file '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: The following synthetic libraries should be added to 
+        the list of link libraries: 
+        'dw_foundation.sldb'. (UISN-26)
+Compiling source file /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv
+
+Statistics for case statements in always block at line 2 in file
+        '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            4             |     auto/no      |
+===============================================
+
+Inferred memory devices in process
+        in routine adder_cinc line 2 in file
+                '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|       sum_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   adder_cinc/7   |   4    |    2    |      2       |
+======================================================
+Warning:  /u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_1c.sv:2: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully.
+Current design is now '/u/ramadugu/Downloads/lab3-sairamadugu-master/syn/rtl/adder_cinc.db:adder_cinc'
+Loaded 1 design.
+Current design is 'adder_cinc'.
+dc_shell> 
+Current design is 'adder_cinc'.
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/generic.sdb'

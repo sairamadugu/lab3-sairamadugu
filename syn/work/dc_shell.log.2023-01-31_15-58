@@ -1,0 +1,48 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ramadugu/.synopsys_dv_prefs.tcl
+dc_shell> set top_design adder_1a
+adder_1a
+dc_shell> source ../scripts/genus-adder_1a.tcl
+Error: unknown command 'set_db' (CMD-005)
+Error: unknown command 'set_db' (CMD-005)
+Error: unknown command 'read_hdl' (CMD-005)
+Loading db file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.lib'
+Error: File is not a DB file. (DB-1)
+Error: The file '/pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.lib' is not a DB file.
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Error: Cannot find the design 'adder_1a' in the library 'WORK'. (LBR-0)
+Error: unknown command 'update_names' (CMD-005)
+Error: unknown command 'update_names' (CMD-005)
+Error: unknown command 'update_names' (CMD-005)
+Error: unknown command 'update_names' (CMD-005)
+Error: unknown command 'update_names' (CMD-005)
+Error: unknown command 'update_names' (CMD-005)
+set_max_delay -from [all_inputs ] -to [all_outputs] 0
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+0
+Error: unknown command 'syn_generic' (CMD-005)
+Error: extra positional option 'adder_1a' (CMD-012)
+Error: unknown command 'syn_map' (CMD-005)
+Error: unknown command 'syn_opt' (CMD-005)
+Error: unknown command 'check_timing_intent' (CMD-005)
+Error: unknown command 'write_hdl' (CMD-005)
+dc_shell> less genus-adder_!a.tcl
+Error: unknown command 'less' (CMD-005)
+dc_shell> less genus-adder_1aa.tcl
+Error: unknown command 'less' (CMD-005)
+dc_shell> less genus-adder_1a.tcl
+Error: unknown command 'less' (CMD-005)
+dc_shell> exit
+
+Memory usage for this session 63 Mbytes.
+Memory usage for this session including child processes 63 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 90 seconds ( 0.03 hours ).
+
+Thank you...
+

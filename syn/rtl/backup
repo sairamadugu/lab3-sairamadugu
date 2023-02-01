@@ -1,0 +1,11 @@
+//module adder_1a(input logic [3:0] a, input logic [3:0] b, input logic c_in, output logic [3:0] sum, output logic c_out);
+  //assign sum[0] = a[0] ^ b[0] ^ c_in;
+ // assign sum[1] = a[1] ^ b[1] ^ (a[0] & b[0]) ^ (a[0] & c_in) ^ (b[0] & c_in);
+  //assign sum[2] = a[2] ^ b[2] ^ (a[1] & b[1]) ^ (a[1] & c_in) ^ (b[1] & c_in) ^ (a[0] & b[0] & c_in);
+  //assign sum[3] = a[3] ^ b[3] ^ (a[2] & b[2]) ^ (a[2] & c_in) ^ (b[2] & c_in) ^ (a[1] & b[1] & c_in) ^ (a[0] & b[0] & c_in);
+ // assign c_out = (a[3] & b[3]) | (a[2] & b[2] & c_in) | (a[1] & b[1] & c_in) | (a[0] & b[0] & c_in);
+//endmodule
+
+
+
+  default: {c_out ,sum} =0;
