@@ -13,7 +13,7 @@ Report : timing
         -capacitance
 Design : adder_1c
 Version: Q-2019.12-SP3
-Date   : Wed Feb  1 13:05:06 2023
+Date   : Wed Feb  1 16:16:36 2023
 ****************************************
 
 Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c

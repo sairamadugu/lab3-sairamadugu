@@ -4,7 +4,7 @@ Report : constraint
         -all_violators
 Design : adder_1b
 Version: Q-2019.12-SP3
-Date   : Wed Feb  1 11:26:54 2023
+Date   : Wed Feb  1 13:51:33 2023
 ****************************************
 
 
@@ -14,8 +14,8 @@ Date   : Wed Feb  1 11:26:54 2023
    Endpoint                 Path Delay     Path Delay        Slack
    -----------------------------------------------------------------
    sum[3]                       0.00           0.25 r        -0.25  (VIOLATED)
-   sum[2]                       0.00           0.25 f        -0.25  (VIOLATED)
-   cout                         0.00           0.24 f        -0.24  (VIOLATED)
+   cout                         0.00           0.25 f        -0.25  (VIOLATED)
+   sum[2]                       0.00           0.24 f        -0.24  (VIOLATED)
    sum[0]                       0.00           0.14 f        -0.14  (VIOLATED)
    sum[1]                       0.00           0.14 f        -0.14  (VIOLATED)
 
@@ -25,7 +25,7 @@ Date   : Wed Feb  1 11:26:54 2023
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   adder_1b                     0.00       6158885.50     -6158885.50
+   adder_1b                     0.00       6173354.00     -6173354.00
                                                                     (VIOLATED)
 
 

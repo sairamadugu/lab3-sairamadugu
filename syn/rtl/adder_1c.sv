@@ -24,6 +24,7 @@ case({a,b,c_in})
 3'b101 : begin sum =0 ; c_out =1; end
 3'b110 : begin sum =0 ; c_out =1; end
 3'b111 : begin sum =1 ;  c_out =1; end
+default : {sum ,c_out } =0;
 endcase
 end
 endmodule
