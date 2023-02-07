@@ -20,7 +20,7 @@ set lib_dir /pkgs/synopsys/2020/32_28nm/SAED32_EDK
 # ICC2 NDM choosing also uses the sub_lib_types so that only the required libraries and extras are not loaded.
 
 # fifo1
-set top_design simple_adder
+set top_design adder_1c
 set add_ios 0
 set pad_design 0
 set rtl_list [list ../rtl/$top_design.sv ]

@@ -244,4 +244,12 @@ Warning: There is no defined clock in the design. (PWR-80)
 Writing verilog file '/home/ramadugu/common/Downloads/lab3-sairamadugu-master/syn/outputs/adder_1d.dc.vg'.
 Writing ddc file '../outputs/adder_1d.dc.ddc'.
 1
-dc_shell> 
+dc_shell> exit
+
+Memory usage for this session 172 Mbytes.
+Memory usage for this session including child processes 172 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+Elapsed time for this session 12542 seconds ( 3.48 hours ).
+
+Thank you...
+

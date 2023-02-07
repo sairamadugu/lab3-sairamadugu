@@ -1,0 +1,16 @@
+  Setting attribute of root '/': 'stdout_log' = genus.log.23-02-02_10-02
+  Setting attribute of root '/': 'command_log' = genus.cmd.23-02-02_10-02
+WARNING: This version of the tool is 1156 days old.
+@genus:root: 1> gui_show
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [check_design]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [check_design]
+        : There is no design here.
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> set top_design adder_1a
+adder_1a
+@genus:root: 3> gui_show
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [check_design]
+        : There is no design here.
